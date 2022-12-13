@@ -25,4 +25,11 @@ public class Player {
     public void addItem(String name) {
         equipment.add(name);
     }
+
+    public void attack(Wizzard w) {
+        System.out.println(name + " attacks " + w);
+        if(equipment.contains("sword")) {
+            w.kill();
+        }
+    }
 }

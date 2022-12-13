@@ -1,7 +1,6 @@
 package ac.uk.cornwallcollege.richardmorris;
 
-public class Monster {
-    boolean isAlive = true;
+public class Monster extends Enemy{
     private final String type;
 
     public Monster(String type) {
@@ -10,10 +9,6 @@ public class Monster {
 
     public String getType() {
         return type;
-    }
-
-    public void kill() {
-        isAlive = false;
     }
 
     @Override

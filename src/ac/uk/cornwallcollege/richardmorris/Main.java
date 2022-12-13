@@ -15,5 +15,16 @@ public class Main {
         p1.attack(m1);
         System.out.println(m1);
 
+        Wizzard w1 = new Wizzard("Bee");
+        w1.revive(m1);
+        System.out.println(m1);
+
+        p1.attack(w1);
+
+        Zombie z1 = new Zombie();
+        System.out.println(z1);
+        z1.kill();
+        System.out.println(z1);
+
     }
 }
