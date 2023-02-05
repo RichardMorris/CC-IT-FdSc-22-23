@@ -2,29 +2,8 @@ package ac.uk.cornwallcollege.richardmorris;
 
 public class Main {
 
-    record Rectangle(int x, int y, int w, int h) {}
-
-    static int area(Object o) {
-        if (o instanceof Rectangle(int x, int y, int w, int h)) {
-            return w * h;
-        }
-        return 0;
-    }
-
-    static int area2(Object o) {
-        int a = switch(o) {
-        case Rectangle(int x, int y, int w, int h) ->
-            w * h;
-            default -> 0;
-        };
-        return a;
-    }
 
     public static void main(String[] args) {
-        var rect = new Rectangle(0,0,5,10);
-        int a = area2(rect);
-        System.out.println(rect.toString() + a);
-
         Player p1 = new Player("John");
         p1.jump();
 
